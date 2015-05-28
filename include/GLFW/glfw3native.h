@@ -203,6 +203,8 @@ GLFWAPI CGDirectDisplayID glfwGetCocoaMonitor(GLFWmonitor* monitor);
  *  @ingroup native
  */
 GLFWAPI id glfwGetCocoaWindow(GLFWwindow* window);
+
+GLFWAPI id glfwGetCocoaView(GLFWwindow* window);
 #endif
 
 #if defined(GLFW_EXPOSE_NATIVE_NSGL)

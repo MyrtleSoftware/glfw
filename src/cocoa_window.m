@@ -1303,3 +1303,10 @@ GLFWAPI id glfwGetCocoaWindow(GLFWwindow* handle)
     return window->ns.object;
 }
 
+GLFWAPI id glfwGetCocoaView(GLFWwindow* handle)
+{
+    _GLFWwindow* window = (_GLFWwindow*) handle;
+    _GLFW_REQUIRE_INIT_OR_RETURN(nil);
+    return window->ns.view;
+}
+
